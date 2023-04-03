@@ -1,0 +1,70 @@
+
+given , Last_Name,Phone, Email, Pet_Name, pup_Breed, service_appointment, Appointment_Date, wrtie sql queries where it first checks if employee exists by phone number, then if pet exists by name and customer_ID, if they don't exist create a new record, and create sql query to make an appointment with service_appointment and Appointment_Date
+
+
+CREATE TABLE Customers (
+    Customer_Id INTEGER PRIMARY KEY,
+    First_Name TEXT,
+    Last_Name Text,
+    Phone TEXT,
+    Email TEXT
+);
+CREATE TABLE Pets (
+    Pet_ID INTEGER PRIMARY KEY,
+    Pet_Name TEXT,
+    pup_Breed TEXT,,
+    Customer_ID INTEGER,
+    FOREIGN KEY(Customer_ID) REFERENCES Customers(ID)
+);
+
+CREATE TABLE Appointments (
+    Appointment_Id INTEGER PRIMARY KEY,
+    Appointment_Date DATE,
+    Pet_ID INTEGER,
+    Groomer_ID INTEGER,
+    service_appointment TEXT,
+    FOREIGN KEY(Pet_ID) REFERENCES Pets(ID),
+    FOREIGN KEY(Groomer_ID) REFERENCES Groomers(ID)
+);
+
+CREATE TABLE Groomers (
+    Groomers_Id INTEGER PRIMARY KEY,
+    First_Name TEXT,
+    Last_nae Text, 
+    Phone TEXT
+);
+
+CREATE TABLE Payments (
+    ID INTEGER PRIMARY KEY,
+    Amount FLOAT,
+    Payment_Date DATE,
+    Payment_Method TEXT,
+    Appointment_ID INTEGER,
+    FOREIGN KEY(Appointment_ID) REFERENCES Appointments(ID)
+);
+
+$sql = "SELECT Employee_Id FROM Employees WHERE Phone = '123-456-7890';"
+if no restult
+
+SELECT Pet_ID FROM Pets WHERE Pet_Name = 'Buddy' AND Customer_ID = 1;
+
+INSERT INTO Pets (Pet_Name, pup_Breed, Customer_ID)
+VALUES ('Buddy', 'Golden Retriever', 1);
+
+INSERT INTO Appointments (Appointment_Date, Pet_ID, Groomer_ID, service_appointment)
+VALUES ('2023-04-05', 1, 2, 'Bath and Trim');
+
+
+groomers that have appointments on a particular day:
+SELECT Groomers.Groomers_Id, Groomers.First_Name, Groomers.Last_Name, Appointments.Appointment_Date
+FROM Groomers
+JOIN Appointments ON Groomers.Groomers_Id = Appointments.Groomer_ID
+WHERE Appointments.Appointment_Date = '2023-04-05';
+
+available groomers for a given day:
+
+SELECT Groomers.Groomers_Id, Groomers.First_Name, Groomers.Last_Name
+FROM Groomers
+LEFT JOIN Appointments ON Groomers.Groomers_Id = Appointments.Groomer_ID
+WHERE Appointments.Appointment_Date <> '2023-04-05' OR Appointments.Appointment_Date IS NULL;
+

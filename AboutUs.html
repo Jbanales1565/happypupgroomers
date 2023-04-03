@@ -1,0 +1,521 @@
+<?php
+	if (isset($_POST['Book_Now'])){
+		header("Location: BookNow.html");
+		exit;
+	} elseif (isset($_POST['Home'])){
+		header("Location: Home.html");
+		exit;
+	} elseif (isset($_POST['About_Us'])){
+		header("Location: AboutUs.html");
+		exit;
+	} elseif (isset($_POST['Services'])){
+		header("Location: Services.html");
+		exit;
+	} elseif (isset($_POST['Dog_Blog'])){
+		header("Location: Blog.html");
+		exit;
+	} elseif (isset($_POST['Testimonials'])){
+		header("Location: Testimonials.html");
+		exit;
+	} elseif (isset($_POST['Contact_Us'])){
+		header("Location: ContactUs.html");
+		exit;
+	}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AboutUs</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: AboutUs;
+		--web-view-id: AboutUs;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: AboutUs;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#AboutUs {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: AboutUs;
+		--web-view-id: AboutUs;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes  {
+	
+	
+	}
+	@keyframes  {
+	
+	
+	}
+	@keyframes  {
+	
+	
+	}
+	@keyframes  {
+	
+	
+	}
+	#Rectangle_1_bn {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_1_bn {
+		position: absolute;
+		overflow: visible;
+		width: 1331px;
+		height: 115px;
+		left: 252px;
+		top: 239px;
+	}
+	#Email_PetGroomingmymailcom_bo {
+		left: 1208px;
+		top: 34px;
+		position: absolute;
+		overflow: visible;
+		width: 376px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(112,112,112,1);
+	}
+	#Image_1_bp {
+		position: absolute;
+		width: 43px;
+		height: 44px;
+		left: 436px;
+		top: 285px;
+		overflow: visible;
+	}
+	#Home_bq input {
+		cursor: pointer;
+		left: 293px;
+		top: 276px;
+		position: absolute;
+		overflow: visible;
+		width: 108px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(112,112,112,1);
+		background-color: white;
+
+	}
+	#About_Us_br input {
+		background-color: white;
+		left: 515px;
+		top: 276px;
+		position: absolute;
+		overflow: visible;
+		width: 165px;
+		white-space: nowrap;
+		cursor: pointer;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(112,112,112,1);
+	}
+	#Services_bs input {
+		background-color: white;
+		left: 794px;
+		top: 276px;
+		position: absolute;
+		overflow: visible;
+		width: 142px;
+		white-space: nowrap;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: Services.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(112,112,112,1);
+	}
+	#Image_1_bt {
+		position: absolute;
+		width: 43px;
+		height: 44px;
+		left: 715px;
+		top: 285px;
+		overflow: visible;
+	}
+	#Image_1_bu {
+		position: absolute;
+		width: 43px;
+		height: 44px;
+		left: 971px;
+		top: 286px;
+		overflow: visible;
+	}
+	#Dog_Blog_bv input {
+		cursor: pointer;
+		background-color: white;
+		left: 1050px;
+		top: 276px;
+		position: absolute;
+		overflow: visible;
+		width: 167px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(112,112,112,1);
+	}
+	#Image_1_bw {
+		position: absolute;
+		width: 43px;
+		height: 44px;
+		left: 1252px;
+		top: 285px;
+		overflow: visible;
+	}
+	#Testimonials_bx input {
+		cursor: pointer;
+		background-color: white;
+		left: 1331px;
+		top: 276px;
+		position: absolute;
+		overflow: visible;
+		width: 216px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(112,112,112,1);
+	}
+	#Image_4_by {
+		position: absolute;
+		width: 140px;
+		height: 120px;
+		left: 252px;
+		top: 112px;
+		overflow: visible;
+	}
+	#Image_5_bz {
+		position: absolute;
+		width: 48px;
+		height: 51px;
+		left: 622px;
+		top: 25px;
+		overflow: visible;
+	}
+	#Image_6_b {
+		position: absolute;
+		width: 47px;
+		height: 50px;
+		left: 788px;
+		top: 26px;
+		overflow: visible;
+	}
+	#Telephone_555_123-4567_b {
+		left: 847px;
+		top: 34px;
+		position: absolute;
+		overflow: visible;
+		width: 288px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(112,112,112,1);
+	}
+	#Location_b {
+		left: 682px;
+		top: 35px;
+		position: absolute;
+		overflow: visible;
+		width: 95px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(112,112,112,1);
+	}
+	#Image_7_b {
+		position: absolute;
+		width: 50px;
+		height: 51px;
+		left: 1146px;
+		top: 24px;
+		overflow: visible;
+	}
+	#Happy_Pup_Groomers_b {
+		left: 423px;
+		top: 146px;
+		position: absolute;
+		overflow: visible;
+		width: 400px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(26,26,26,1);
+	}
+	#Group_1_b {
+		position: absolute;
+		width: 270px;
+		height: 67px;
+		left: 252px;
+		top: 373px;
+		overflow: visible;
+		cursor: pointer;
+	}
+	#Rectangle_2_b {
+		fill: rgba(0,0,0,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_2_b {
+		position: absolute;
+		overflow: visible;
+		width: 270px;
+		height: 67px;
+		left: 0px;
+		top: 0px;
+	}
+	#Book_Now_b input {
+		cursor: pointer;
+		background-color: black;
+		left: 37px;
+		top: 7px;
+		position: absolute;
+		overflow: visible;
+		width: 197px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_2_b {
+		position: absolute;
+		width: 270px;
+		height: 67px;
+		left: 544px;
+		top: 373px;
+		overflow: visible;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: ContactUs.html;
+		cursor: pointer;
+	}
+	#Rectangle_2_ca {
+		fill: rgba(0,0,0,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_2_ca {
+		position: absolute;
+		overflow: visible;
+		width: 270px;
+		height: 67px;
+		left: 0px;
+		top: 0px;
+	}
+	#Contact_Us_ca input {
+		cursor: pointer;
+		background-color: black;
+		left: 37px;
+		top: 7px;
+		position: absolute;
+		overflow: visible;
+		width: 204px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_3_cb {
+		position: absolute;
+		width: 1331px;
+		height: 67px;
+		left: 252px;
+		top: 480px;
+		overflow: visible;
+	}
+	#Rectangle_2_cc {
+		fill: rgba(0,0,0,0.439);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_2_cc {
+		position: absolute;
+		overflow: visible;
+		width: 1331px;
+		height: 67px;
+		left: 0px;
+		top: 0px;
+	}
+	#Established_in_2015 {
+		left: 423px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 364px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(0,0,0,0.439);
+	}
+	#Looking_for_a_luxurious_and_we {
+		left: 468px;
+		top: 587px;
+		position: absolute;
+		overflow: hidden;
+		width: 935px;
+		height: 436px;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+</style>
+<script id="applicationScript" type="text/javascript" src="AboutUs.js"></script>
+</head>
+<body> <form method="POST">
+<div id="AboutUs">
+	<svg class="Rectangle_1_bn">
+		<rect id="Rectangle_1_bn" rx="0" ry="0" x="0" y="0" width="1331" height="115">
+		</rect>
+	</svg>
+	<div id="Email_PetGroomingmymailcom_bo">
+		<span>Email: PetGrooming@mymail.com</span>
+	</div>
+	<img id="Image_1_bp" src="Image_1_bp.png" srcset="Image_1_bp.png 1x, Image_1_bp@2x.png 2x">
+		
+	<div id="Home_bq">
+		<input type="submit" name="Home" value="Home">
+	</div>
+	<div id="About_Us_br">
+		<input type="submit" name="About_Us" value="About Us">
+	</div>
+	<div id="Services_bs">
+		<input type="submit" name="Services" value="Services">
+	</div>
+	<img id="Image_1_bt" src="Image_1_bt.png" srcset="Image_1_bt.png 1x, Image_1_bt@2x.png 2x">
+		
+	<img id="Image_1_bu" src="Image_1_bu.png" srcset="Image_1_bu.png 1x, Image_1_bu@2x.png 2x">
+		
+	<div id="Dog_Blog_bv">
+		<input type="submit" name="Dog_Blog" value="Dog Blog">
+	</div>
+	<img id="Image_1_bw" src="Image_1_bw.png" srcset="Image_1_bw.png 1x, Image_1_bw@2x.png 2x">
+		
+	<div id="Testimonials_bx">
+		<input type="submit" name="Testimonials" value="Testimonials">
+	</div>
+	<img id="Image_4_by" src="Image_4_by.png" srcset="Image_4_by.png 1x, Image_4_by@2x.png 2x">
+		
+	<img id="Image_5_bz" src="Image_5_bz.png" srcset="Image_5_bz.png 1x, Image_5_bz@2x.png 2x">
+		
+	<img id="Image_6_b" src="Image_6_b.png" srcset="Image_6_b.png 1x, Image_6_b@2x.png 2x">
+		
+	<div id="Telephone_555_123-4567_b">
+		<span>Telephone (555) 123-4567</span>
+	</div>
+	<div id="Location_b">
+		<span>Location</span>
+	</div>
+	<img id="Image_7_b" src="Image_7_b.png" srcset="Image_7_b.png 1x, Image_7_b@2x.png 2x">
+		
+	<div id="Happy_Pup_Groomers_b">
+		<span>Happy Pup Groomers</span>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Group_1_b">
+		<svg class="Rectangle_2_b">
+			<rect id="Rectangle_2_b" rx="0" ry="0" x="0" y="0" width="270" height="67">
+			</rect>
+		</svg>
+		<div id="Book_Now_b">
+			<input type="submit" name="Book_Now" value="Book Now">
+		</div>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Group_2_b">
+		<svg class="Rectangle_2_ca">
+			<rect id="Rectangle_2_ca" rx="0" ry="0" x="0" y="0" width="270" height="67">
+			</rect>
+		</svg>
+		<div id="Contact_Us_ca">
+			<input type="submit" name="Contact_Us" value="Contact Us">
+		</div>
+	</div>
+	<div id="Group_3_cb">
+		<svg class="Rectangle_2_cc">
+			<rect id="Rectangle_2_cc" rx="0" ry="0" x="0" y="0" width="1331" height="67">
+			</rect>
+		</svg>
+		<div id="Established_in_2015">
+			<span>Established in 2015</span>
+		</div>
+	</div>
+	<div id="Looking_for_a_luxurious_and_we">
+		<span>Looking for a luxurious and wellness-focused dog grooming experience in San Diego? Look no further than Happy Pup Groomers! Our boutique dog resort and spa is designed with your pup's ultimate comfort, relaxation, and well-being in mind.<br/><br/>Our lavish cage-free suites and spacious play area are perfect for giving your furry friend the pampering they deserve. We also offer a range of a la carte enrichment activities and spa services to keep your pup happy and healthy. We take health and safety seriously, which is why we have advanced water and air filtration systems, soundproof walls, and puppy peek cams to ensure your pup is in a caring and stress-free environment.<br/><br/><br/>Happy Pup Groomers was established in November 2015 as a family-owned and operated business. Determined to provide a better service, Our love for dogs and the demand for quality dog care in our community led us to start small business and grow into a fully recognized pet groomer. Our goal is to become the gold standard for local pet care in the community.<br/></span><br/>
+	</div>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,527 @@
+<?php
+	if (isset($_POST['Book_Now'])){
+		header("Location: BookNow.html");
+		exit;
+	} elseif (isset($_POST['Home'])){
+		header("Location: Home.html");
+		exit;
+	} elseif (isset($_POST['About_Us'])){
+		header("Location: AboutUs.html");
+		exit;
+	} elseif (isset($_POST['Services'])){
+		header("Location: Services.html");
+		exit;
+	} elseif (isset($_POST['Dog_Blog'])){
+		header("Location: Blog.html");
+		exit;
+	} elseif (isset($_POST['Testimonials'])){
+		header("Location: Testimonials.html");
+		exit;
+	} elseif (isset($_POST['Contact_Us'])){
+		header("Location: ContactUs.html");
+		exit;
+	}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Services;
+		--web-view-id: Services;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Services;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Services {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Services;
+		--web-view-id: Services;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes  {
+	
+	
+	}
+	@keyframes  {
+	
+	
+	}
+	@keyframes  {
+	
+	
+	}
+	@keyframes  {
+	
+	
+	}
+	#Rectangle_1_ch {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_1_ch {
+		position: absolute;
+		overflow: visible;
+		width: 1331px;
+		height: 115px;
+		left: 252px;
+		top: 239px;
+	}
+	#Email_PetGroomingmymailcom_ci {
+		left: 1208px;
+		top: 34px;
+		position: absolute;
+		overflow: visible;
+		width: 376px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(112,112,112,1);
+	}
+	#Image_1_cj {
+		position: absolute;
+		width: 43px;
+		height: 44px;
+		left: 436px;
+		top: 285px;
+		overflow: visible;
+	}
+	#Home_ck input {
+		cursor: pointer;
+		background-color: white;
+		left: 293px;
+		top: 276px;
+		position: absolute;
+		overflow: visible;
+		width: 108px;
+		white-space: nowrap;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: Home.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(112,112,112,1);
+	}
+	#About_Us_cl input {
+		background-color: white;
+		left: 515px;
+		top: 276px;
+		position: absolute;
+		overflow: visible;
+		width: 165px;
+		white-space: nowrap;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: AboutUs.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(112,112,112,1);
+	}
+	#Services_cm input {
+		background-color: white;
+		cursor: pointer;
+		left: 794px;
+		top: 276px;
+		position: absolute;
+		overflow: visible;
+		width: 142px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(112,112,112,1);
+	}
+	#Image_1_cn {
+		position: absolute;
+		width: 43px;
+		height: 44px;
+		left: 715px;
+		top: 285px;
+		overflow: visible;
+	}
+	#Image_1_co {
+		position: absolute;
+		width: 43px;
+		height: 44px;
+		left: 971px;
+		top: 286px;
+		overflow: visible;
+	}
+	#Dog_Blog_cp input {
+		background-color: white;
+		cursor: pointer;
+		left: 1050px;
+		top: 276px;
+		position: absolute;
+		overflow: visible;
+		width: 167px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(112,112,112,1);
+	}
+	#Image_1_cq {
+		position: absolute;
+		width: 43px;
+		height: 44px;
+		left: 1252px;
+		top: 285px;
+		overflow: visible;
+	}
+	#Testimonials_cr input {
+		cursor: pointer;
+		background-color: white;
+		left: 1331px;
+		top: 276px;
+		position: absolute;
+		overflow: visible;
+		width: 216px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(112,112,112,1);
+	}
+	#Image_4_cs {
+		position: absolute;
+		width: 140px;
+		height: 120px;
+		left: 252px;
+		top: 112px;
+		overflow: visible;
+	}
+	#Image_5_ct {
+		position: absolute;
+		width: 48px;
+		height: 51px;
+		left: 622px;
+		top: 25px;
+		overflow: visible;
+	}
+	#Image_6_cu {
+		position: absolute;
+		width: 47px;
+		height: 50px;
+		left: 788px;
+		top: 26px;
+		overflow: visible;
+	}
+	#Telephone_555_123-4567_cv {
+		left: 847px;
+		top: 34px;
+		position: absolute;
+		overflow: visible;
+		width: 288px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(112,112,112,1);
+	}
+	#Location_cw {
+		left: 682px;
+		top: 35px;
+		position: absolute;
+		overflow: visible;
+		width: 95px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(112,112,112,1);
+	}
+	#Image_7_cx {
+		position: absolute;
+		width: 50px;
+		height: 51px;
+		left: 1146px;
+		top: 24px;
+		overflow: visible;
+	}
+	#Happy_Pup_Groomers_cy {
+		left: 423px;
+		top: 146px;
+		position: absolute;
+		overflow: visible;
+		width: 400px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(26,26,26,1);
+	}
+	#Group_1_cz {
+		position: absolute;
+		width: 270px;
+		height: 67px;
+		left: 252px;
+		top: 373px;
+		overflow: visible;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: BookNow.html;
+		cursor: pointer;
+	}
+	#Rectangle_2_c {
+		fill: rgba(0,0,0,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_2_c {
+		position: absolute;
+		overflow: visible;
+		width: 270px;
+		height: 67px;
+		left: 0px;
+		top: 0px;
+	}
+	#Book_Now_c input {
+		cursor: pointer;
+		background-color: black;
+		left: 37px;
+		top: 7px;
+		position: absolute;
+		overflow: visible;
+		width: 197px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_2_c {
+		position: absolute;
+		width: 270px;
+		height: 67px;
+		left: 544px;
+		top: 373px;
+		overflow: visible;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: ContactUs.html;
+		cursor: pointer;
+	}
+	#Rectangle_2_da {
+		fill: rgba(0,0,0,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_2_da {
+		position: absolute;
+		overflow: visible;
+		width: 270px;
+		height: 67px;
+		left: 0px;
+		top: 0px;
+	}
+	#Contact_Us_c input {
+		cursor: pointer;
+		background-color: black;
+		left: 37px;
+		top: 7px;
+		position: absolute;
+		overflow: visible;
+		width: 204px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_3_c {
+		position: absolute;
+		width: 1331px;
+		height: 67px;
+		left: 252px;
+		top: 480px;
+		overflow: visible;
+	}
+	#Rectangle_2_db {
+		fill: rgba(0,0,0,0.439);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_2_db {
+		position: absolute;
+		overflow: visible;
+		width: 1331px;
+		height: 67px;
+		left: 0px;
+		top: 0px;
+	}
+	#Grooming_Services_for_Happy_Pu {
+		left: 342px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 649px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(0,0,0,0.439);
+	}
+	#The_Full_Works_-_This_package_ {
+		left: 252px;
+		top: 587px;
+		position: absolute;
+		overflow: visible;
+		width: 1321px;
+		height: 300px;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+</style>
+<script id="applicationScript" type="text/javascript" src="Services.js"></script>
+</head>
+<body> <form method="POST">
+<div id="Services">
+	<svg class="Rectangle_1_ch">
+		<rect id="Rectangle_1_ch" rx="0" ry="0" x="0" y="0" width="1331" height="115">
+		</rect>
+	</svg>
+	<div id="Email_PetGroomingmymailcom_ci">
+		<span>Email: PetGrooming@mymail.com</span>
+	</div>
+	<img id="Image_1_cj" src="Image_1_cj.png" srcset="Image_1_cj.png 1x, Image_1_cj@2x.png 2x">
+		
+	<div onclick="application.goToTargetView(event)" id="Home_ck">
+		<input type="submit" name="Home" value="Home">
+	</div>
+	<div onclick="application.goToTargetView(event)" id="About_Us_cl">
+		<input type="submit" name="About_Us" value="About Us">
+	</div>
+	<div id="Services_cm">
+		<input type="submit" name="Services" value="Services">
+	</div>
+	<img id="Image_1_cn" src="Image_1_cn.png" srcset="Image_1_cn.png 1x, Image_1_cn@2x.png 2x">
+		
+	<img id="Image_1_co" src="Image_1_co.png" srcset="Image_1_co.png 1x, Image_1_co@2x.png 2x">
+		
+	<div id="Dog_Blog_cp">
+		<input type="submit" name="Dog_Blog" value="Dog Blog">
+	</div>
+	<img id="Image_1_cq" src="Image_1_cq.png" srcset="Image_1_cq.png 1x, Image_1_cq@2x.png 2x">
+		
+	<div id="Testimonials_cr">
+		<input type="submit" name="Testimonials" value="Testimonials">
+	</div>
+	<img id="Image_4_cs" src="Image_4_cs.png" srcset="Image_4_cs.png 1x, Image_4_cs@2x.png 2x">
+		
+	<img id="Image_5_ct" src="Image_5_ct.png" srcset="Image_5_ct.png 1x, Image_5_ct@2x.png 2x">
+		
+	<img id="Image_6_cu" src="Image_6_cu.png" srcset="Image_6_cu.png 1x, Image_6_cu@2x.png 2x">
+		
+	<div id="Telephone_555_123-4567_cv">
+		<span>Telephone (555) 123-4567</span>
+	</div>
+	<div id="Location_cw">
+		<span>Location</span>
+	</div>
+	<img id="Image_7_cx" src="Image_7_cx.png" srcset="Image_7_cx.png 1x, Image_7_cx@2x.png 2x">
+		
+	<div id="Happy_Pup_Groomers_cy">
+		<span>Happy Pup Groomers</span>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Group_1_cz">
+		<svg class="Rectangle_2_c">
+			<rect id="Rectangle_2_c" rx="0" ry="0" x="0" y="0" width="270" height="67">
+			</rect>
+		</svg>
+		<div id="Book_Now_c">
+			<input type="submit" name="Book_Now" value="Book Now">
+		</div>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Group_2_c">
+		<svg class="Rectangle_2_da">
+			<rect id="Rectangle_2_da" rx="0" ry="0" x="0" y="0" width="270" height="67">
+			</rect>
+		</svg>
+		<div id="Contact_Us_c">
+			<input type="submit" name="Contact_Us" value="Contact Us">
+		</div>
+	</div>
+	<div id="Group_3_c">
+		<svg class="Rectangle_2_db">
+			<rect id="Rectangle_2_db" rx="0" ry="0" x="0" y="0" width="1331" height="67">
+			</rect>
+		</svg>
+		<div id="Grooming_Services_for_Happy_Pu">
+			<span>Grooming Services for Happy Pups</span>
+		</div>
+	</div>
+	<div id="The_Full_Works_-_This_package_">
+		<span>"The Full Works" - This package includes a bath and grooming, nail trimming, ear cleaning, and teeth brushing. This is a comprehensive package that covers all of the essential grooming services.<br/><br/>"The Quick Fix" - This package is designed for pet owners who want a fast and efficient grooming service. It includes a bath and grooming, nail trimming, and ear cleaning.<br/><br/>"The Shed Buster" - This package is targeted towards pet owners whose dogs shed a lot. It includes a de-shedding treatment, nail trimming, and ear cleaning.</span>
+	</div>
+</div>
+</form>
+</body>
+</html>

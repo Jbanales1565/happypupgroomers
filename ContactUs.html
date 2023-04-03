@@ -1,0 +1,792 @@
+<?php
+	if (isset($_POST['Book_Now'])){
+		header("Location: BookNow.html");
+		exit;
+	} elseif (isset($_POST['Home'])){
+		header("Location: Home.html");
+		exit;
+	} elseif (isset($_POST['About_Us'])){
+		header("Location: AboutUs.html");
+		exit;
+	} elseif (isset($_POST['Services'])){
+		header("Location: Services.html");
+		exit;
+	} elseif (isset($_POST['Dog_Blog'])){
+		header("Location: Blog.html");
+		exit;
+	} elseif (isset($_POST['Testimonials'])){
+		header("Location: Testimonials.html");
+		exit;
+	} elseif (isset($_POST['Contact_Us'])){
+		header("Location: ContactUs.html");
+		exit;
+	}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ContactUs</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: ContactUs;
+		--web-view-id: ContactUs;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: ContactUs;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#ContactUs {
+		position: absolute;
+		width: 1920px;
+		height: 1332px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: ContactUs;
+		--web-view-id: ContactUs;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes  {
+	
+	
+	}
+	@keyframes  {
+	
+	
+	}
+	@keyframes  {
+	
+	
+	}
+	@keyframes  {
+	
+	
+	}
+	#Rectangle_1_e {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_1_e {
+		position: absolute;
+		overflow: visible;
+		width: 1331px;
+		height: 115px;
+		left: 252px;
+		top: 239px;
+	}
+	#Email_PetGroomingmymailcom_e {
+		left: 1208px;
+		top: 34px;
+		position: absolute;
+		overflow: visible;
+		width: 376px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(112,112,112,1);
+	}
+	#Image_1_e {
+		position: absolute;
+		width: 43px;
+		height: 44px;
+		left: 436px;
+		top: 285px;
+		overflow: visible;
+	}
+	#Home_e input {
+		cursor: pointer;
+		background-color: white;
+		left: 293px;
+		top: 276px;
+		position: absolute;
+		overflow: visible;
+		width: 108px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(112,112,112,1);
+	}
+	#About_Us_e input {
+		cursor: pointer;
+		background-color: white;
+		left: 515px;
+		top: 276px;
+		position: absolute;
+		overflow: visible;
+		width: 165px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(112,112,112,1);
+	}
+	#Services_e input {
+		cursor: pointer;
+		background-color: white;
+		left: 794px;
+		top: 276px;
+		position: absolute;
+		overflow: visible;
+		width: 142px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(112,112,112,1);
+	}
+	#Image_1_fa {
+		position: absolute;
+		width: 43px;
+		height: 44px;
+		left: 715px;
+		top: 285px;
+		overflow: visible;
+	}
+	#Image_1_fb {
+		position: absolute;
+		width: 43px;
+		height: 44px;
+		left: 971px;
+		top: 286px;
+		overflow: visible;
+	}
+	#Dog_Blog_fc input {
+		cursor: pointer;
+		background-color: white;
+		left: 1050px;
+		top: 276px;
+		position: absolute;
+		overflow: visible;
+		width: 167px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(112,112,112,1);
+	}
+	#Image_1_fd {
+		position: absolute;
+		width: 43px;
+		height: 44px;
+		left: 1252px;
+		top: 285px;
+		overflow: visible;
+	}
+	#Testimonials_fe input {
+		cursor: pointer;
+		background-color: white;
+		left: 1331px;
+		top: 276px;
+		position: absolute;
+		overflow: visible;
+		width: 216px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(112,112,112,1);
+	}
+	#Image_4_ff {
+		position: absolute;
+		width: 140px;
+		height: 120px;
+		left: 252px;
+		top: 112px;
+		overflow: visible;
+	}
+	#Image_5_fg {
+		position: absolute;
+		width: 48px;
+		height: 51px;
+		left: 622px;
+		top: 25px;
+		overflow: visible;
+	}
+	#Image_6_fh {
+		position: absolute;
+		width: 47px;
+		height: 50px;
+		left: 788px;
+		top: 26px;
+		overflow: visible;
+	}
+	#Telephone_555_123-4567_fi {
+		left: 847px;
+		top: 34px;
+		position: absolute;
+		overflow: visible;
+		width: 288px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(112,112,112,1);
+	}
+	#Location_fj {
+		left: 682px;
+		top: 35px;
+		position: absolute;
+		overflow: visible;
+		width: 95px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(112,112,112,1);
+	}
+	#Image_7_fk {
+		position: absolute;
+		width: 50px;
+		height: 51px;
+		left: 1146px;
+		top: 24px;
+		overflow: visible;
+	}
+	#Happy_Pup_Groomers_fl {
+		left: 423px;
+		top: 146px;
+		position: absolute;
+		overflow: visible;
+		width: 400px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(26,26,26,1);
+	}
+	#Group_1_fm {
+		position: absolute;
+		width: 270px;
+		height: 67px;
+		left: 252px;
+		top: 373px;
+		overflow: visible;
+	}
+	#Rectangle_2_fn {
+		fill: rgba(0,0,0,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_2_fn {
+		position: absolute;
+		overflow: visible;
+		width: 270px;
+		height: 67px;
+		left: 0px;
+		top: 0px;
+	}
+	#Book_Now_fo input {
+		cursor: pointer;
+		background-color: black;
+		left: 37px;
+		top: 7px;
+		position: absolute;
+		overflow: visible;
+		width: 197px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_2_fp {
+		position: absolute;
+		width: 270px;
+		height: 67px;
+		left: 544px;
+		top: 373px;
+		overflow: visible;
+	}
+	#Rectangle_2_fq {
+		fill: rgba(0,0,0,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_2_fq {
+		position: absolute;
+		overflow: visible;
+		width: 270px;
+		height: 67px;
+		left: 0px;
+		top: 0px;
+	}
+	#Contact_Us_fr input {
+		cursor: pointer;
+		background-color: black;
+		left: 37px;
+		top: 7px;
+		position: absolute;
+		overflow: visible;
+		width: 204px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_3_fs {
+		position: absolute;
+		width: 1331px;
+		height: 67px;
+		left: 252px;
+		top: 480px;
+		overflow: visible;
+	}
+	#Rectangle_2_ft {
+		fill: rgba(0,0,0,0.439);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_2_ft {
+		position: absolute;
+		overflow: visible;
+		width: 1331px;
+		height: 67px;
+		left: 0px;
+		top: 0px;
+	}
+	#Contact_Us_fu {
+		left: 569px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 203px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(0,0,0,0.439);
+	}
+	#Rectangle_12 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_12 {
+		position: absolute;
+		overflow: visible;
+		width: 1331px;
+		height: 764px;
+		left: 252px;
+		top: 568px;
+	}
+	#Last_Name_fw {
+		left: 543px;
+		top: 589px;
+		position: absolute;
+		overflow: visible;
+		width: 202px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(0,0,0,0.439);
+	}
+	#First_Name_fx {
+		left: 273px;
+		top: 589px;
+		position: absolute;
+		overflow: visible;
+		width: 207px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(0,0,0,0.439);
+	}
+	#Phone_Number_fy {
+		left: 808px;
+		top: 589px;
+		position: absolute;
+		overflow: visible;
+		width: 283px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(0,0,0,0.439);
+	}
+	#Email_Address_fz {
+		left: 1154px;
+		top: 589px;
+		position: absolute;
+		overflow: visible;
+		width: 266px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(0,0,0,0.439);
+	}
+	#Rectangle_13 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_13 {
+		position: absolute;
+		overflow: visible;
+		width: 258px;
+		height: 50px;
+		left: 252px;
+		top: 670px;
+	}
+	#Rectangle_14 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_14 {
+		position: absolute;
+		overflow: visible;
+		width: 287px;
+		height: 50px;
+		left: 509px;
+		top: 670px;
+	}
+	#Rectangle_15 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_15 {
+		position: absolute;
+		overflow: visible;
+		width: 318px;
+		height: 50px;
+		left: 796px;
+		top: 670px;
+	}
+	#Rectangle_16 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_16 {
+		position: absolute;
+		overflow: visible;
+		width: 469px;
+		height: 50px;
+		left: 1114px;
+		top: 670px;
+	}
+	#subject {
+		left: 278px;
+		top: 748px;
+		position: absolute;
+		overflow: visible;
+		width: 132px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(0,0,0,0.439);
+	}
+	#Rectangle_17 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_17 {
+		position: absolute;
+		overflow: visible;
+		width: 1331px;
+		height: 50px;
+		left: 252px;
+		top: 829px;
+	}
+	#Message {
+		left: 278px;
+		top: 894px;
+		position: absolute;
+		overflow: visible;
+		width: 160px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(0,0,0,0.439);
+	}
+	#Rectangle_20 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_20 {
+		position: absolute;
+		overflow: visible;
+		width: 1331px;
+		height: 264px;
+		left: 252px;
+		top: 962px;
+	}
+	#Group_5 {
+		position: absolute;
+		width: 270px;
+		height: 67px;
+		left: 252px;
+		top: 1266px;
+		overflow: visible;
+	}
+	#Rectangle_2_f {
+		fill: rgba(0,0,0,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_2_f {
+		position: absolute;
+		overflow: visible;
+		width: 270px;
+		height: 67px;
+		left: 0px;
+		top: 0px;
+	}
+	#Send {
+		left: 78px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 94px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+</style>
+<script id="applicationScript" type="text/javascript" src="ContactUs.js"></script>
+</head>
+<body> <form method="POST">
+<div id="ContactUs">
+	<svg class="Rectangle_1_e">
+		<rect id="Rectangle_1_e" rx="0" ry="0" x="0" y="0" width="1331" height="115">
+		</rect>
+	</svg>
+	<div id="Email_PetGroomingmymailcom_e">
+		<span>Email: PetGrooming@mymail.com</span>
+	</div>
+	<img id="Image_1_e" src="Image_1_e.png" srcset="Image_1_e.png 1x, Image_1_e@2x.png 2x">
+		
+	<div id="Home_e">
+		<input type="submit" name="Home" value="Home">
+	</div>
+	<div id="About_Us_e">
+		<input type="submit" name="About_Us" value="About Us">
+	</div>
+	<div id="Services_e">
+		<input type="submit" name="Services" value="Services">
+	</div>
+	<img id="Image_1_fa" src="Image_1_fa.png" srcset="Image_1_fa.png 1x, Image_1_fa@2x.png 2x">
+		
+	<img id="Image_1_fb" src="Image_1_fb.png" srcset="Image_1_fb.png 1x, Image_1_fb@2x.png 2x">
+		
+	<div id="Dog_Blog_fc">
+		<input type="submit" name="Dog_Blog" value="Dog Blog">
+	</div>
+	<img id="Image_1_fd" src="Image_1_fd.png" srcset="Image_1_fd.png 1x, Image_1_fd@2x.png 2x">
+		
+	<div id="Testimonials_fe">
+		<input type="submit" name="Testimonials" value="Testimonials">
+	</div>
+	<img id="Image_4_ff" src="Image_4_ff.png" srcset="Image_4_ff.png 1x, Image_4_ff@2x.png 2x">
+		
+	<img id="Image_5_fg" src="Image_5_fg.png" srcset="Image_5_fg.png 1x, Image_5_fg@2x.png 2x">
+		
+	<img id="Image_6_fh" src="Image_6_fh.png" srcset="Image_6_fh.png 1x, Image_6_fh@2x.png 2x">
+		
+	<div id="Telephone_555_123-4567_fi">
+		<span>Telephone (555) 123-4567</span>
+	</div>
+	<div id="Location_fj">
+		<span>Location</span>
+	</div>
+	<img id="Image_7_fk" src="Image_7_fk.png" srcset="Image_7_fk.png 1x, Image_7_fk@2x.png 2x">
+		
+	<div id="Happy_Pup_Groomers_fl">
+		<span>Happy Pup Groomers</span>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Group_1_fm">
+		<svg class="Rectangle_2_fn">
+			<rect id="Rectangle_2_fn" rx="0" ry="0" x="0" y="0" width="270" height="67">
+			</rect>
+		</svg>
+		<div id="Book_Now_fo">
+			<input type="submit" name="Book_Now" value="Book Now">
+		</div>
+	</div>
+	<div id="Group_2_fp">
+		<svg class="Rectangle_2_fq">
+			<rect id="Rectangle_2_fq" rx="0" ry="0" x="0" y="0" width="270" height="67">
+			</rect>
+		</svg>
+		<div id="Contact_Us_fr">
+			<input type="submit" name="Contact_Us" value="Contact Us">
+		</div>
+	</div>
+	<div id="Group_3_fs">
+		<svg class="Rectangle_2_ft">
+			<rect id="Rectangle_2_ft" rx="0" ry="0" x="0" y="0" width="1331" height="67">
+			</rect>
+		</svg>
+		<div id="Contact_Us_fu">
+			<span>Contact Us</span>
+		</div>
+	</div>
+	<svg class="Rectangle_12">
+		<rect id="Rectangle_12" rx="0" ry="0" x="0" y="0" width="1331" height="764">
+		</rect>
+	</svg>
+	<div id="Last_Name_fw">
+		<span>Last Name</span>
+	</div>
+	<div id="First_Name_fx">
+		<span>First Name</span>
+	</div>
+	<div id="Phone_Number_fy">
+		<span>Phone Number</span>
+	</div>
+	<div id="Email_Address_fz">
+		<span>Email Address</span>
+	</div>
+	<svg class="Rectangle_13">
+		<rect id="Rectangle_13" rx="0" ry="0" x="0" y="0" width="258" height="50">
+		</rect>
+	</svg>
+	<svg class="Rectangle_14">
+		<rect id="Rectangle_14" rx="0" ry="0" x="0" y="0" width="287" height="50">
+		</rect>
+	</svg>
+	<svg class="Rectangle_15">
+		<rect id="Rectangle_15" rx="0" ry="0" x="0" y="0" width="318" height="50">
+		</rect>
+	</svg>
+	<svg class="Rectangle_16">
+		<rect id="Rectangle_16" rx="0" ry="0" x="0" y="0" width="469" height="50">
+		</rect>
+	</svg>
+	<div id="subject">
+		<span>subject</span>
+	</div>
+	<svg class="Rectangle_17">
+		<rect id="Rectangle_17" rx="0" ry="0" x="0" y="0" width="1331" height="50">
+		</rect>
+	</svg>
+	<div id="Message">
+		<span>Message</span>
+	</div>
+	<svg class="Rectangle_20">
+		<rect id="Rectangle_20" rx="0" ry="0" x="0" y="0" width="1331" height="264">
+		</rect>
+	</svg>
+	<div id="Group_5">
+		<svg class="Rectangle_2_f">
+			<rect id="Rectangle_2_f" rx="0" ry="0" x="0" y="0" width="270" height="67">
+			</rect>
+		</svg>
+		<div id="Send">
+			<span>Send</span>
+		</div>
+	</div>
+</div>
+</form>
+</body>
+</html>
