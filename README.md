@@ -1,14 +1,28 @@
-% Check if the product is close enough to the identity matrix
-is_unitary = max(max(abs(product - eye(size(A))))) < tolerance;
+Hadamard Matrix (2x2):
+H = 1/sqrt(2) * [1 1; 1 -1];
 
-% Check if the product of the conjugate transpose is close enough to the identity matrix
-is_unitary_conj = max(max(abs(product_conj - eye(size(A))))) < tolerance;
+Pauli X Matrix (2x2):
+PauliX = [0 1; 1 0];
 
-% Combine both checks to determine if A is unitary
-is_unitary_final = is_unitary && is_unitary_conj;
 
-if is_unitary_final
-    disp('The matrix is unitary.');
-else
-    disp('The matrix is not unitary.');
+Identity Matrix (Any Size):
+n = 3; % Size of the identity matrix
+I = eye(n);
+
+
+Rotation Matrix (2x2):
+theta = pi/4; % Angle of rotation
+R = [cos(theta) -sin(theta); sin(theta) cos(theta)];
+
+Discrete Fourier Transform (DFT) Matrix (4x4):
+N = 4; % Size of the DFT matrix
+omega = exp(-2i*pi/N);
+DFT = zeros(N);
+
+for n = 0:N-1
+    for k = 0:N-1
+        DFT(n+1, k+1) = omega^(n*k);
+    end
 end
+
+DFT = 1/sqrt(N) * DFT;
